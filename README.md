@@ -1,7 +1,4 @@
 # PHP for WordPress Learning
-
-My journey of learning PHP alongside WordPress and Elementor.
-
 ## Goals
 
 - Learn PHP fundamentals
