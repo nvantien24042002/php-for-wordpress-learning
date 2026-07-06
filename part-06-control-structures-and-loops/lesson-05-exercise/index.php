@@ -1,12 +1,20 @@
 <?php
 // Bài tập 1
-function tinhTongChan($n) {
-    $t1 = 0;
-    for ($i = 2; $i <= $n; $i += 2) {
-        $t1 += $i;
-    }
-    return $t1;
+// T1 = 2 + 4 + 6 +...+n(n>2)
+/*
+    Thuật toán
+    B1: tạo ra các số hạng 
+    B2: tính tổng
+    B3: Xuất kết quả
+ */
+$n = 10;
+$t1 = 0;
+for($i = 2;$i<=$n;$i+=2){
+    $t1 = $t+ $i;
 }
+echo $t1;
+
+
 function tinhTongNghichDao($n) {
     $t2 = 0;
     for ($i = 3; $i <= $n; $i += 3) {
@@ -39,8 +47,7 @@ function giaiPTBac2($a, $b, $c) {
         return "Phương trình vô nghiệm";
     }
 }
-$n = 10;
-echo "Tổng T1 (n=$n): " . tinhTongChan($n) . "<br>";
+
 echo "Tổng T2 (n=$n): " . tinhTongNghichDao($n) . "<br>";
 echo "Tổng T3 (n=$n): " . tinhTongChuoi($n) . "<br>";
 echo "Giải PT (1x^2 - 3x + 2 = 0): " . giaiPTBac2(1, -3, 2);
