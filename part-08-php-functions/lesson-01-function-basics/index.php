@@ -4,8 +4,8 @@ function sum($a,$b){
 }
 echo sum(1,2);
 
-function calculateRectangleArea($lenght,$width){
-    return ($lenght + $width) * 2;
+function calculateRectangleArea($length, $width) {
+    return $length * $width;
 }
 echo "<br>";
 echo calculateRectangleArea(2,5);
