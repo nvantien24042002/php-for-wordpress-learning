@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($num2 == 0) {
                     $result = "Lỗi: Không thể chia cho 0!";
                 } else {
-                    $result = $num1 / $num2;
+                    $result =number_format(($num1 / $num2),2);
                 }
                 break;
             default:
@@ -56,8 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <?php 
-    // Hiển thị kết quả nếu đã có dữ liệu
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($result !=="") {
         echo "<h3>Kết quả: $result</h3>";
     }
     ?>
