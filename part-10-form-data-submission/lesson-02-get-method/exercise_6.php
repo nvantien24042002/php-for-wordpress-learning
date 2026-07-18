@@ -26,7 +26,7 @@ $product = array(
         'category' => "book",
     ),
 );
-$key = $_POST['key'];
+$key = isset($_GET['key']) ? $_GET['key'] : '';
 $found_count = 0;
 ?>
 <!DOCTYPE html>
