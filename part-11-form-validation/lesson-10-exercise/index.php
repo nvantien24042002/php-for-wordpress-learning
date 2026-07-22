@@ -43,7 +43,7 @@ if (isset($_POST['btn_login'])) {
 
     if(empty($error)){
         echo "Đăng ký thành công !<br>";
-        echo "Họ tên: {$fullname} <br> Username: {$username} <br> SĐT: {$phone}";
+        // echo "Họ tên: {$fullname} <br> Username: {$username} <br> SĐT: {$phone}";
     }
 }
 ?>
@@ -57,16 +57,16 @@ if (isset($_POST['btn_login'])) {
 <body>
     <form action="" method="post">
         <label for="fullname">Họ và tên</label><br>
-        <input type="text" name="fullname" id="fullname"><br>
+        <input type="text" name="fullname" value="<?php set_value('fullname') ?>" id="fullname"><br>
         <?php form_error('fullname'); ?><br>
         <label for="username">Tên đăng nhập</label><br>
-        <input type="text" name="username" id="username"><br>
+        <input type="text" name="username" value="<?php set_value('username') ?>" id="username"><br>
         <?php form_error('username'); ?><br>
         <label for="password">Mật khẩu</label><br>
         <input type="password" name="password" id="password"><br>
         <?php form_error('password'); ?><br>
         <label for="phone">Số điện thoại</label><br>
-        <input type="tel" name="phone" id="phone"><br>
+        <input type="tel" name="phone" value="<?php set_value('phone') ?>" id="phone"><br>
         <?php form_error('phone'); ?><br>
         <input type="submit" value="Login" name="btn_login">
     </form>
